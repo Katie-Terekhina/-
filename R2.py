@@ -49,14 +49,12 @@ for i in range(n):
         C_ost = C_ost - AA_tr_sort[i][1]
         tot_price += AA_tr_sort[i][0]
         tot_weight += AA_tr_sort[i][1]
-        print ( int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", 
-...     int(AA_tr_sort[i][1]))
+        print ( int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", int(AA_tr_sort[i][1]))
         index.append(int(AA_tr_sort[i][3]))
     else: 
         tot_price += AA_tr_sort[i][0]
         tot_weight += AA_tr_sort[i][1]
-        print ( int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", 
-...     int(AA_tr_sort[i][1]))
+        print ( int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", int(AA_tr_sort[i][1]))
         index.append(int(AA_tr_sort[i][3]))
         break
         
