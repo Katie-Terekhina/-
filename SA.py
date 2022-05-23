@@ -45,15 +45,13 @@ def solve(n_items, rnd, values, sizes, max_size, max_iter, start_temperature, al
                 curr_packing = adj_packing; curr_valu = adj_v 
           # else don't accept
         if iteration % interval == 0:
-            print("iter = %6d : curr value = %7.0f : curr temp = %10.2f " %
-...         (iteration, curr_valu, curr_temperature))
+            print("iter = %6d : curr value = %7.0f : curr temp = %10.2f " %(iteration, curr_valu, curr_temperature))
 
         if curr_temperature <= stop:
             curr_temperature = stop
         else:
             curr_temperature *= alpha
-      # curr_temperature = start_temperature * \
-      # pct_iters_left * 0.0050
+            
         iteration += 1
 
     return curr_packing       
