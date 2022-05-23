@@ -49,8 +49,7 @@ for i in range(n):
         tot_price += AA_tr_sort[i][0]
         tot_weight += AA_tr_sort[i][1]
         index.append(int(AA_tr_sort[i][3]))
-        print (int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", 
-...     int(AA_tr_sort[i][1]) )
+        print (int(AA_tr_sort[i][3]),": ", int(AA_tr_sort[i][0]), " ", int(AA_tr_sort[i][1]) )
     else: continue
         
 f = open(name, "a")      
