@@ -68,10 +68,8 @@ def crossover(population_new,pc,ncross):
         if r<=pc:
             point1=np.random.randint(0,(len(parents_one[i])-1))
             point2=np.random.randint(point1,len(parents_one[i]))
-            off_one=parents_one[i][:point1]+parents_two[i][point1:point2]+
-...         parents_one[i][point2:]
-            off_two=parents_two[i][:point1]+parents_one[i][point1:point2]+
-...         parents_two[i][point2:]
+            off_one=parents_one[i][:point1]+parents_two[i][point1:point2]+parents_one[i][point2:]
+            off_two=parents_two[i][:point1]+parents_one[i][point1:point2]+parents_two[i][point2:]
             ncross = ncross+1
         else:
             off_one=parents_one[i]
